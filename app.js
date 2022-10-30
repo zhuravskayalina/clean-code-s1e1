@@ -87,8 +87,8 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
-    var label=listItem.querySelector("label");
+    var editInput=listItem.querySelector('.list-item__input-text');
+    var label=listItem.querySelector(".list-item__label");
     var editBtn=listItem.querySelector(".list-item__button_edit");
     var containsClass=listItem.classList.contains("list-item_edit-mode");
     //If class of the parent is .editmode
@@ -126,6 +126,8 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    const taskLabel = listItem.querySelector('.list-item__label');
+    taskLabel.classList.add('list-item__label_completed');
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -138,6 +140,8 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    const taskLabel = listItem.querySelector('.list-item__label');
+    taskLabel.classList.remove('list-item__label_completed');
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }

@@ -131,7 +131,7 @@
     vertical-align: middle;
 }
 
-.list-item > input[type="checkbox"] {
+. list-item__label_completed {
     margin: 0 10px;
 }
 

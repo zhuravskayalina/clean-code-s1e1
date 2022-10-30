@@ -39,7 +39,8 @@
 }
 
 .add-section__new-task,
-.list-item__label {
+.list-item__label,
+.input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;

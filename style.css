@@ -35,6 +35,10 @@
     margin: 0 auto 0;
 }
 
+.add-section {
+    margin: 16px 0 16px;
+}
+
 .add-section__new-task,
 .list-item__label,
 .input {

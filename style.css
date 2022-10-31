@@ -149,13 +149,13 @@
   width: 226px;
 }
 
-.list-item__button_delete__img {
+.list-item__delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.list-item__button_delete__img:hover {
+.list-item__delete-img:hover {
   transform: rotateZ(0);
 }
 
